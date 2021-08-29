@@ -2,13 +2,11 @@
 
 **Multi\-protocol Label Switching \(MPLS\)** \(2 Sept 2014\)Lab:  MPLS 1 \- 3
 Traditional routing
-
 \- Destination IP \-\> Next hop
 
 MPLS
 
 \- Labels \-\> Next hop
-
 \- No need to look to routing table
 
 ![20141003_112936-1.jpeg](image/20141003_112936-1.jpeg)
