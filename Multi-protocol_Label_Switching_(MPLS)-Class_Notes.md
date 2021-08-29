@@ -5,7 +5,6 @@ Traditional routing
 \- Destination IP \-\> Next hop
 
 MPLS
-
 \- Labels \-\> Next hop
 \- No need to look to routing table
 
