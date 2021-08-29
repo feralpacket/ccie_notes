@@ -1,6 +1,8 @@
 # Multi-protocol Label Switching (MPLS) - Class Notes
 
-**Multi\-protocol Label Switching \(MPLS\)** \(2 Sept 2014\)Lab:  MPLS 1 \- 3
+**Multi\-protocol Label Switching \(MPLS\)** \(2 Sept 2014\)
+Lab:  MPLS 1 \- 3
+
 Traditional routing
 
 \- Destination IP \-\> Next hop
