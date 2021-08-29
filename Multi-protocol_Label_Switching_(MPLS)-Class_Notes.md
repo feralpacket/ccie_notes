@@ -2,10 +2,13 @@
 
 **Multi\-protocol Label Switching \(MPLS\)** \(2 Sept 2014\)Lab:  MPLS 1 \- 3
 Traditional routing
+
 \- Destination IP \-\> Next hop
 
 MPLS
+
 \- Labels \-\> Next hop
+
 \- No need to look to routing table
 
 ![20141003_112936-1.jpeg](image/20141003_112936-1.jpeg)
@@ -17,20 +20,30 @@ MPLS
 DLCI \-\> Labels
 
 **MPLS Architecture**
- \- Labels
-     \-\> 32\-bit value used for data propogation
+
+\- Labels
+
+\-\> 32\-bit value used for data propogation
 
 ![20141003_113004-1.jpeg](image/20141003_113004-1.jpeg)
 
 Label number \-\> 2^20
+
 Experimental bits
-     \-\> QoS
-     \-\> 8 possible values
+
+\-\> QoS
+
+\-\> 8 possible values
+
 Bottom of Stack
-     \-\> 0 \- More labels to follow
-     \-\> 1 \- Last label
+
+\-\> 0 \- More labels to follow
+
+\-\> 1 \- Last label
+
 TTL
-     \-\> Default is 255
+
+\-\> Default is 255
 
 ![20141003_113719-1.jpeg](image/20141003_113719-1.jpeg)
 
