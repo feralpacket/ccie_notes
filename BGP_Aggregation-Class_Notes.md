@@ -2,11 +2,14 @@
 
 **BGP Aggregation** 
 
+
 ![20141001_163257-1.jpeg](image/20141001_163257-1.jpeg)
 
+```
 R1\(config\)\# **<span style="background-color: #ffaaaa">router bgp 100</span>**
 
 **<span style="background-color: #ffaaaa">aggregate\-address 10.0.0.0 255.255.255.252.0 summary\-only</span>**
+```
 
 **summary\-only**
 
