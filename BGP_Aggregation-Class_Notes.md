@@ -1,8 +1,6 @@
 # BGP Aggregation - Class Notes
 
-**BGP Aggregation** \(26 Aug 2014\)
-
-Lab:  BGP 1 \- 6
+**BGP Aggregation** 
 
 ![20141001_163257-1.jpeg](image/20141001_163257-1.jpeg)
 
