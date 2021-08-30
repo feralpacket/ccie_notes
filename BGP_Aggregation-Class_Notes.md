@@ -4,17 +4,15 @@
 
 ![20141001_163257-1.jpeg](image/20141001_163257-1.jpeg)
 
-R1\(config\)\# <span style="background-color: #ffaaaa">router bgp 100</span>
+R1\(config\)\# **<span style="background-color: #ffaaaa">router bgp 100</span>**
 
- <span style="background-color: #ffaaaa">aggregate\-address 10.0.0.0 255.255.255.252.0 summary\-only</span>
+**<span style="background-color: #ffaaaa">aggregate\-address 10.0.0.0 255.255.255.252.0 summary\-only</span>**
 
 **summary\-only**
 
   * Optional
-
   * Suppresses the specific routes and sends the summary route only
-
-      * Otherwise the specific routes and the summary route will be sent
+    * Otherwise the specific routes and the summary route will be sent
 
 **suppress\-map**
 
