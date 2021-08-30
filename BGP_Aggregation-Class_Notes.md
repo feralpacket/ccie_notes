@@ -12,19 +12,19 @@ R1\(config\)\# <span style="background-color: #ffaaaa">router bgp 100</span>
 
 **summary\-only**
 
- \- Optional
+  * Optional
 
- \- Suppresses the specific routes and sends the summary route only
+  * Suppresses the specific routes and sends the summary route only
 
-     \-\> Otherwise the specific routes and the summary route will be sent
+      * Otherwise the specific routes and the summary route will be sent
 
 **suppress\-map**
 
- \- Can suppress specific routes and leak other routes
+  * Can suppress specific routes and leak other routes
 
- \- Any routes which are permitted in this map will be suppress and any routes that are denied will be leaked
+  * Any routes which are permitted in this map will be suppress and any routes that are denied will be leaked
 
- \- Also sends the summary route
+  * Also sends the summary route
 
 Scnario \-\> On R1, create a summary route and also leak 10.0.1.0 and 10.0.3.0 specific routes to R2 as well.
 
@@ -42,13 +42,13 @@ R1\(config\)\# <span style="background-color: #ffaaaa">access\-list 10 permit 10
 
  <span style="background-color: #ffaaaa">aggregate\-address 10.0.0.0 255.255.252.0 summary\-only suppress\-map SUPPRESS</span>
 
-     \-\> "summary\-only" is optional in this example
+      * "summary\-only" is optional in this example
 
 **unsurpress\-map**
 
- \- Leaks specific routes which are permitted
+  * Leaks specific routes which are permitted
 
- \- Neighbor specific command
+  * Neighbor specific command
 
 Scenario \-\> Summarize 10.0.0.0 network on R1 and make sure R2 always chooses R3 as the next\-hop to reach 10.0.2.0 /24;  everything else can go directly to R1.
 
@@ -70,13 +70,13 @@ R1\(config\)\# <span style="background-color: #ffaaaa">access\-list 10 permit 10
 
 **AS\-SET**
 
- \- Whenever a router summarizes the specific routes of another router which belongs to a different AS, the path information is lost
+  * Whenever a router summarizes the specific routes of another router which belongs to a different AS, the path information is lost
 
- \- To retain the path information and add it to the summary route, use as\-set.
+  * To retain the path information and add it to the summary route, use as\-set.
 
 If R2 creates a summary address, the summary address will be sent back to R1.
 
-     \-\> Usually not a good thing
+      * Usually not a good thing
 
 R2\# <span style="background-color: #ffaaaa">sh ip bgp</span>
 
@@ -148,15 +148,15 @@ e.g.
 
 10.0.0.0 /22          500 600 700 800 i
 
-     \-\> Combined when as\-set is used
+      * Combined when as\-set is used
 
 ![20141001_163415-1.jpeg](image/20141001_163415-1.jpeg)
 
 **Attibute\-map**
 
- \- Used to change the path attributes of the summary
+  * Used to change the path attributes of the summary
 
-     \-\> but it cannot AS\-PATH
+      * but it cannot AS\-PATH
 
 R2\(config\)\# <span style="background-color: #ffaaaa">route\-map ATTRIBUTE</span>
 
@@ -166,7 +166,7 @@ R2\(config\)\# <span style="background-color: #ffaaaa">route\-map ATTRIBUTE</spa
 
  <span style="background-color: #ffaaaa">aggregate\-address 10.0.0.0 255.255.252.0 summary\-only attribute\-map ATTRIBUTE as\-set</span>
 
-     \-\> as\-set used in case a reflected route is created
+      * as\-set used in case a reflected route is created
 
 ![20141001_163427.jpeg](image/20141001_163427.jpeg)
 
@@ -180,11 +180,11 @@ R1\# sh ip bgp
 
 10.0.2.0          400
 
- \- aggregate address
+  * aggregate address
 
 10.0.0.0 /22     200 300 400 i
 
-     \-\> Will be dropped by AS 200, 300, and 400
+      * Will be dropped by AS 200, 300, and 400
 
 Scenario \-\> R1 should create a summary address for 10.0.0.0, 10.0.1.0, and 10.0.2.0 and this summary address should retain the AS\-PATH information of AS 200 and AS 300.
 
@@ -208,7 +208,7 @@ R1\# sh ip bgp
 
 10.0.2.0          400
 
- \- aggregate address
+  * aggregate address
 
 10.0.0.0 /22     200 300 i
 
@@ -216,19 +216,19 @@ R1\# sh ip bgp
 
 **Conditional Advertising**
 
- \- Advertise a route when a condition is true
+  * Advertise a route when a condition is true
 
 Condition \#1
 
- \- R2 would advertise loopback 0 of R3 only if the link between R1 \<\-\> R4 is down 
+  * R2 would advertise loopback 0 of R3 only if the link between R1 \<\-\> R4 is down 
 
- \- non\-exist\-map
+  * non\-exist\-map
 
 Condition \#2
 
- \- R2 would advertise loopback 0 of R3 only if the link between R1 \<\-\> R4 is up
+  * R2 would advertise loopback 0 of R3 only if the link between R1 \<\-\> R4 is up
 
- \- exist\-map
+  * exist\-map
 
 <span style="background-color: #ffaaaa">router bgp 100</span>
 
@@ -262,11 +262,11 @@ MAP2 \- Link between R1 \<\-\> R4
 
 **BGP Backdoor Link**
 
- \- How could you prefer EIGRP over eBGP for traffic between R1 \<\-\> R3?
+  * How could you prefer EIGRP over eBGP for traffic between R1 \<\-\> R3?
 
-     \-\> You can lower the AD of EIGRP, but that can have devastating consequences.
+      * You can lower the AD of EIGRP, but that can have devastating consequences.
 
- \- If two organizations have a backdoor connection over an IGP, BGP can be configured to make it's own routes less desirable for some destinations by increasing the AD selectively from 20 to 200
+  * If two organizations have a backdoor connection over an IGP, BGP can be configured to make it's own routes less desirable for some destinations by increasing the AD selectively from 20 to 200
 
 R3\(config\)\# <span style="background-color: #ffaaaa">router bgp 300</span>
 
@@ -274,25 +274,25 @@ R3\(config\)\# <span style="background-color: #ffaaaa">router bgp 300</span>
 
 The network statement does not advertise the network
 
- \- When the network is received in an update, the AD is increased to 200
+  * When the network is received in an update, the AD is increased to 200
 
- \- The EIGRP route gets added to the routing table
+  * The EIGRP route gets added to the routing table
 
 ![20141001_163504-1.jpeg](image/20141001_163504-1.jpeg)
 
 **Peer Groups**
 
- \- Allows a BGP router to group it's neighbors who have similar configurations and require similar treatment
+  * Allows a BGP router to group it's neighbors who have similar configurations and require similar treatment
 
- \- Benefits
+  * Benefits
 
-     \-\> Less configuration
+      * Less configuration
 
-     \-\> Outgoing updates to these neighbors do need separate processing
+      * Outgoing updates to these neighbors do need separate processing
 
- \- Drawback
+  * Drawback
 
-     \-\> Cannot have customized filtering or route\-map \(processing\) on outgoing updates
+      * Cannot have customized filtering or route\-map \(processing\) on outgoing updates
 
 R1\(config\)\# <span style="background-color: #ffaaaa">router bgp 100</span>
 
@@ -312,11 +312,11 @@ R1\(config\)\# <span style="background-color: #ffaaaa">router bgp 100</span>
 
 **MAXAS\-LIMIT**
 
- \- Feature limits the incoming updates according to the AS\-PATH
+  * Feature limits the incoming updates according to the AS\-PATH
 
- \- Can be used to only accept routes from a directly connected organization
+  * Can be used to only accept routes from a directly connected organization
 
- \- Can appear in the troubleshooting portion of the R&S lab
+  * Can appear in the troubleshooting portion of the R&S lab
 
 <span style="background-color: #ffaaaa">router bgp 100</span>
 
@@ -326,23 +326,23 @@ R1\(config\)\# <span style="background-color: #ffaaaa">router bgp 100</span>
 
 **Unequal\-cost Load Balancing in BGP**
 
- \- DMZ Link Bandwidth
+  * DMZ Link Bandwidth
 
  
 
 maximum\-paths ibgp 2
 
- \- Default is 1
+  * Default is 1
 
 1. DMZ Link
 
- \- Exit interface of edge routers
+  * Exit interface of edge routers
 
-     \-\> Towards eBGP neighbor
+      * Towards eBGP neighbor
 
 2. DMZ Link Bandwidth
 
- \- Bandwidth configured on exit interface
+  * Bandwidth configured on exit interface
 
 3. Any internal router which has an iBGP neighbor with more than one edge router can use DMZ Link feature to load\-balance according to the DMZ Link Bandwidth
 
@@ -350,11 +350,11 @@ maximum\-paths ibgp 2
 
 Configuration
 
- \- On the edge routers, activate the DMZ Link feature and then capture the exit link bandwidth in the DMZ Link extended  community
+  * On the edge routers, activate the DMZ Link feature and then capture the exit link bandwidth in the DMZ Link extended  community
 
- \- Send the extended community to the iBGP neighbor
+  * Send the extended community to the iBGP neighbor
 
- \- On the iBGP neighbor, activate the DMZ Link feature and enable multi\-path selection
+  * On the iBGP neighbor, activate the DMZ Link feature and enable multi\-path selection
 
 R1\(config\)\# <span style="background-color: #ffaaaa">router bgp 100</span>
 
@@ -372,7 +372,7 @@ R3\(config\)\# <span style="background-color: #ffaaaa">router bgp 100</span>
 
 R3\# <span style="background-color: #ffaaaa">clear ip bgp \*</span>
 
-     \-\> Or wait up to 60 seconds
+      * Or wait up to 60 seconds
 
 <span style="background-color: #ffaaaa">sh ip bgp 50.0.0.0</span>
 
