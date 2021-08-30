@@ -9,6 +9,9 @@ R1\(config\)\# **<span style="background-color: #ffaaaa">router bgp 100</span>**
 
 **<span style="background-color: #ffaaaa">aggregate\-address 10.0.0.0 255.255.255.252.0 summary\-only</span>**
 
+<mark>testing testing</mark>
+
+
 **summary\-only**
 
   * Optional
