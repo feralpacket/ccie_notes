@@ -1,7 +1,7 @@
 # IS-IS - Class Notes
 
-**IS\-IS** \(8 Sept 2014\)
-Lab: IS\-IS
+**IS\-IS** 
+
 
 \- Link state routing protocol
 
