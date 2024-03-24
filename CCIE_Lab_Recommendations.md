@@ -7,7 +7,7 @@
 
 **Troubleshooting Section:**
 
- - "There is no troubleshooting section.  There is a misconfiguration section." - Narbik
+ - "There is no troubleshooting section.  There is a misconfiguration section."- Narbik
 
       -> "There is no spoon." - The Matrix
 
