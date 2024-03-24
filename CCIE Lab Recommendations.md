@@ -86,24 +86,27 @@ you can save that notepad file on the desktop during the exam
      -> Watch out for mutual redistribution
           -> Use Narbik’s method of tagging routes with the admin distance of the originating routing protocol:
 
-**==route-map RIPtoEIGRP deny 10==**
- **==match tag 90==**
-**==route-map RIPtoEIGRP permit 20==**
- **==set tag 120==**
+route-map RIPtoEIGRP deny 10
+ match tag 90
+route-map RIPtoEIGRP permit 20
+ set tag 120
+
      -> If route is tagged with 90, originated from EIGRP, deny so they will not be redistributed back into EIGRP
      -> RIP originated routes will be tagged with 120
 
-**==route-map EIGRPtoRIP deny 10==**
- **==match tag 120==**
-**==route-map EIGRPtoRIP==**
- **==set tag 90==**
-     \-> If route is tagged with 120, originated from RIP, deny so they will not be redistributed back into RIP
+route-map EIGRPtoRIP deny 10
+ match tag 120
+route-map EIGRPtoRIP
+ set tag 90
+
+     -> If route is tagged with 120, originated from RIP, deny so they will not be redistributed back into RIP
      -> EIGRP originated routes will be tagged with 90
 
-**==router rip==**
- **==redistribute eigrp 1 route-map EIGRPtoRIP metric 1==**
-**==router eigrp 1==**
- **==redistribute rip route-map RIPtoEIGRP metric 100000 1 255 1 1500==**
+router rip
+ redistribute eigrp 1 route-map EIGRPtoRIP metric 1
+router eigrp 1
+ redistribute rip route-map RIPtoEIGRP metric 100000 1 255 1 1500
+
      -> Don’t use a metric of “1 1 1 1 1” with wide metrics
           -> The resulting composite metric will be too large and will not be advertised
 
