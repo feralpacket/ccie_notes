@@ -1,3 +1,4 @@
+```
 # CCIE Lab Recommendations
 
 **CCIE Lab Recommendations**
@@ -23,7 +24,7 @@
        -> MPLS
 
        -> L3VPN
-
+```
 Â - You donâ€™t troubleshoot 30 devices at the same time
 
 Â  Â  Â -> You only have to troubleshoot 4 to 5 devices for any given ticket
