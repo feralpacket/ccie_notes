@@ -1,3 +1,5 @@
+```
+
 ---
 ---
 **CCIE Lab Recommendations**
@@ -142,7 +144,9 @@ you can save that notepad file on the desktop during the exam
      -> Disabled ports
           -> “X"
 ![[./_resources/CCIE_Lab_Recommendations.resources/Screen Shot 2015-08-30 at 1.17.38 PM.png]]
+```
 
+```
 **Watch for land mind questions**
  - Easy 2 point questions that can break 20 points from somewhere else
  - Don’t chase the rabbit down the rabbit hole
@@ -425,3 +429,5 @@ event manager applet UP
 **Draw a big red “X” on interfaces that have the following applied:**
  - ACL
  - Port-security
+
+```
