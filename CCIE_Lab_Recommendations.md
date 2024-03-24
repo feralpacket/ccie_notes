@@ -6,767 +6,767 @@
 
 **Troubleshooting Section:**
 
- - “There is no troubleshooting section.  There is a misconfiguration section.” - Narbik
+ - "There is no troubleshooting section.  There is a misconfiguration section." - Narbik
 
-     -> “There is no spoon.” - The Matrix
+      -> "There is no spoon." - The Matrix
 
- - "Troubleshoot as if you were configuring the protocol.” - Narbik
+ - "Troubleshoot as if you were configuring the protocol." - Narbik
 
-     -> Review Narbik’s steps for configuring protocols (repeatedly)
+    -> Review Narbik's steps for configuring protocols (repeatedly)
 
-     -> Go through the Cisco360 Student Guide flow charts for configuring protocols (repeatedly)
+    -> Go through the Cisco360 Student Guide flow charts for configuring protocols (repeatedly)
 
-     -> Go through the Cisco360 Student Guide charts on troubleshooting pre-existing configurations (repeatedly)
+    -> Go through the Cisco360 Student Guide charts on troubleshooting pre-existing configurations (repeatedly)
 
-     -> Some protocols are easy to configure, but can be broken in many different ways
+    -> Some protocols are easy to configure, but can be broken in many different ways
 
-          -> MPLS
+       -> MPLS
 
-          -> L3VPN
+       -> L3VPN
 
- - You don’t troubleshoot 30 devices at the same time
+Â - You donâ€™t troubleshoot 30 devices at the same time
 
-     -> You only have to troubleshoot 4 to 5 devices for any given ticket
+Â  Â  Â -> You only have to troubleshoot 4 to 5 devices for any given ticket
 
- - In the Cisco360 Troubleshooting assessments, the routers tended to be configured with “**no logging console**.”  This is to mask the symptoms and log messages that would help you troubleshoot.
+Â - In the Cisco360 Troubleshooting assessments, the routers tended to be configured with â€œ**no logging console**.â€ Â This is to mask the symptoms and log messages that would help you troubleshoot.
 
-     -> First thing to do when connecting to a new device, configure “**logging console**."
+Â  Â  Â -> First thing to do when connecting to a new device, configure â€œ**logging console**."
 
- - Read all of the tickets before trying to fix any of them
+Â - Read all of the tickets before trying to fix any of them
 
-     -> From the Cisco360 Advanced Workshop 1 Student Guide:
+Â  Â  Â -> From the Cisco360 Advanced Workshop 1 Student Guide:
 
-          -> “Some tickets depend on other tickets.  Most do not."
+Â  Â  Â  Â  Â  -> â€œSome tickets depend on other tickets. Â Most do not."
 
-     -> Look for tickets that are interrelated or overlap
+Â  Â  Â -> Look for tickets that are interrelated or overlap
 
-          -> Core network
+Â  Â  Â  Â  Â  -> Core network
 
-               -> Switching
+Â  Â  Â  Â  Â  Â  Â  Â -> Switching
 
-               -> DMVPN
+Â  Â  Â  Â  Â  Â  Â  Â -> DMVPN
 
-          -> Redistribution
+Â  Â  Â  Â  Â  -> Redistribution
 
-     -> Look for devices that are involved in multiple tickets
+Â  Â  Â -> Look for devices that are involved in multiple tickets
 
-          -> May rule out resolution options
+Â  Â  Â  Â  Â  -> May rule out resolution options
 
-          -> A solution for one ticket may break the solution for another ticket
+Â  Â  Â  Â  Â  -> A solution for one ticket may break the solution for another ticket
 
-**[JP Cedeno, #47408](https://routergods.slack.com/team/jpcedeno47408)** 
+**[JP Cedeno, #47408](https://routergods.slack.com/team/jpcedeno47408)**Â 
 
-95% of the TS section you are going to be asked to configure... SOOOO if you struggle with DMVPN, take the working config from TS and copy it into notepad. 
+95% of the TS section you are going to be asked to configure... SOOOO if you struggle with DMVPN, take the working config from TS and copy it into notepad.Â 
 
-you can use that template for your config section 
+you can use that template for your config sectionÂ 
 
 you can save that notepad file on the desktop during the exam
 
 **Diagnostic Section:**
 
- - "Something to do while your lab environment is changed from troubleshooting to configuration.” - don’t remember….
+Â - "Something to do while your lab environment is changed from troubleshooting to configuration.â€ - donâ€™t rememberâ€¦.
 
- - “Diagnostics, this is the worst thing Cisco has ever done.  It’s for kids.  It’s a mini-written in the lab.  If you dump the lab, you’ll have problems with diagnostics." - Narbik
+Â -Â â€œDiagnostics, this is the worst thing Cisco has ever done. Â Itâ€™s for kids. Â Itâ€™s a mini-written in the lab. Â If you dump the lab, youâ€™ll have problems with diagnostics." - Narbik
 
- - The challenge is being able to go through and process a large amount of show commands and being able to spot any errors and problems.
+Â - The challenge is being able to go through and process a large amount of show commands and being able to spot any errors and problems.
 
- - Look at the answers to help led you in the right direction. - Some post on IOEC
+Â - Look at the answers to help led you in the right direction. - Some post on IOEC
 
 **Configuration Section:**
 
 **Read the entire lab:**
 
-** - The test is a reading comprehension test.**
+**Â - The test is a reading comprehension test.**
 
-     -> The Cisco360 assessment labs do a good job at pointing this out
+Â  Â  Â -> The Cisco360 assessment labs do a good job at pointing this out
 
- - If you do the test in the order as written, you will fail.
+Â -Â If you do the test in the order as written, you will fail.
 
-     -> You’ll run out of time when you have to go back of reconfigured devices
+Â  Â  Â -> Youâ€™ll run out of time when you have to go back of reconfigured devices
 
-          -> Potentially introducing configuration errors
+Â  Â  Â  Â  Â  -> Potentially introducing configuration errors
 
- - Look for:
+Â - Look for:
 
-     -> Tasks needed to reach Golden Moment
+Â  Â  Â -> Tasks needed to reach Golden Moment
 
-     -> Interdependencies between tasks
+Â  Â  Â -> Interdependencies between tasks
 
-          -> Authentication required for IGPs, but mentioned with security tasks and not when the IGP is configured
+Â  Â  Â  Â  Â  -> Authentication required for IGPs, but mentioned with security tasks and not when the IGP is configured
 
-          -> Authentication method may force named mode configuration of an IGP, but IGP configuration method is not mentioned
+Â  Â  Â  Â  Â  -> Authentication method may force named mode configuration of an IGP, but IGP configurationÂ method is not mentioned
 
-          -> EIGRP hmac-sha-256
+Â  Â  Â  Â  Â  -> EIGRP hmac-sha-256
 
-     -> Layer 2 configuration tasks later in the lab
+Â  Â  Â -> Layer 2 configuration tasks later in the lab
 
-     -> “Use ACL 1….” later in the lab, when you already used ACL 1 for something else
+Â  Â  Â -> â€œUse ACL 1â€¦.â€ later in the lab, when you already used ACL 1 for something else
 
-     -> Restrictions about removing certain configurations
+Â  Â  Â -> Restrictions about removing certain configurations
 
-          -> “Do not remove access-list 111…."
+Â  Â  Â  Â  Â  -> â€œDo not remove access-list 111â€¦."
 
- - Pay very close attention to the following words:
+Â - Pay very close attention to the following words:
 
-     -> They rule out potential configuration options
+Â  Â  Â -> They rule out potential configuration options
 
-          -> **not**
+Â Â Â Â Â Â  Â Â  -> **not**
 
-          -> **only**
+Â Â Â Â Â Â  Â Â  -> **only**
 
-          -> **without**
+Â Â Â Â Â Â  Â Â  -> **without**
 
- - Lab is based on Cisco’s internal version of IOU, not the one you can find on the Internet
+Â - Lab is based on Ciscoâ€™s internal version of IOU, not the one you can find on the Internet
 
 **Things to look for in the lab diagram:**
 
- - Loops
+Â - Loops
 
- - Stubs
+Â - Stubs
 
- - Count the VLANs
+Â - Count the VLANs
 
- - Look for important routers
+Â - Look for important routers
 
-     -> OSPF ABR
+Â  Â  Â -> OSPF ABR
 
-     -> OSPF ASBR
+Â  Â  Â -> OSPF ASBR
 
-     -> BGP RR
+Â  Â  Â -> BGP RR
 
-     -> extra loopbacks
+Â  Â  Â -> extra loopbacks
 
- - Look for important switches
+Â - Look for important switches
 
- - Interfaces in two protocols
+Â - Interfaces in two protocols
 
- - Discontiguous OSPF area 0
+Â - Discontiguous OSPF area 0
 
-     -> Virtual links
+Â  Â  Â -> Virtual links
 
- - Multicast across DMVPN
+Â - Multicast across DMVPN
 
- - Redistribution points
+Â - Redistribution points
 
-     -> Watch out for mutual redistribution
+Â  Â  Â -> Watch out for mutual redistribution
 
-          -> Use Narbik’s method of tagging routes with the admin distance of the originating routing protocol:
+Â  Â  Â  Â  Â  -> Use Narbikâ€™s method of tagging routes with the admin distance of the originating routing protocol:
 
 **route-map RIPtoEIGRP deny 10**
 
-** match tag 90**
+**Â match tag 90**
 
 **route-map RIPtoEIGRP permit 20**
 
-** set tag 120**
+**Â set tag 120**
 
-     -> If route is tagged with 90, originated from EIGRP, deny so they will not be redistributed back into EIGRP
+Â  Â  Â -> If route is tagged with 90, originated from EIGRP, deny so they will not be redistributed back into EIGRP
 
-     -> RIP originated routes will be tagged with 120
+Â  Â  Â -> RIP originated routes will be tagged with 120
 
 **route-map EIGRPtoRIP deny 10**
 
-** match tag 120**
+**Â match tag 120**
 
 **route-map EIGRPtoRIP**
 
-** set tag 90**
+**Â set tag 90**
 
-     -> If route is tagged with 120, originated from RIP, deny so they will not be redistributed back into RIP
+Â  Â  Â -> If route is tagged with 120, originated from RIP, deny so they will not be redistributed back into RIP
 
-     -> EIGRP originated routes will be tagged with 90
+Â  Â  Â -> EIGRP originated routes will be tagged with 90
 
 **router rip**
 
-** redistribute eigrp 1 route-map EIGRPtoRIP metric 1**
+**Â redistribute eigrp 1 route-map EIGRPtoRIP metric 1**
 
 **router eigrp 1**
 
-** redistribute rip route-map RIPtoEIGRP metric 100000 1 255 1 1500**
+**Â redistribute rip route-map RIPtoEIGRP metric 100000 1 255 1 1500**
 
-     -> Don’t use a metric of “1 1 1 1 1” with wide metrics
+Â  Â  Â -> Donâ€™t use a metric of â€œ1 1 1 1 1â€ with wide metrics
 
-          -> The resulting composite metric will be too large and will not be advertised
+Â  Â  Â  Â  Â  -> The resulting composite metric will be too large and will not be advertised
 
 **Make copies of default configurations**
 
-**  -�**�When logging into any device for the first time
+**Â  -Â** When logging into any device for the first time
 
- - Note:  IOL images may not have a flash:, copy to nvram: or unix:
+Â - Note:Â  IOL images may not have a flash:, copy to nvram: or unix:
 
-    -> **copy run nvram:run.orig**
+Â  Â  -> **copy run nvram:run.orig**
 
- - Remember to go back through and delete the copies
+Â - Remember to go back through and delete the copies
 
-    -> **delete nvram:run.orig**
+Â  Â  -> **delete nvram:run.orig**
 
 **Existing pre-configuration may not be correct**
 
- - “Trust, but verify.” - Reagan
+Â - â€œTrust, but verify.â€ - Reagan
 
- - Verify connectivity between devices
+Â - Verify connectivity between devices
 
-     -> **ping 255.255.255.255 rep 2**
+Â  Â  Â ->Â **ping 255.255.255.255 rep 2**
 
- - Be very careful when defaulting an interface (default int s1/0)  or removing a router section configuration (no router rip).
+Â - Be very careful when defaulting an interface (default int s1/0) Â or removing a router section configuration (no router rip).
 
-    -> Check to see if there is any pre-exisiting configuration.
+Â  Â  -> Check to see if there is any pre-exisiting configuration.
 
 **Drawing Diagrams**
 
- - Only create your own layer 2 diagram when there are more than 2 switches
+Â - Only create your own layer 2 diagram when there are more than 2 switches
 
-     -> Useful for visualizing spanning-tree tasks
+Â  Â  Â -> Useful for visualizing spanning-tree tasks
 
-          -> Root bridges
+Â  Â  Â  Â  Â  -> Root bridges
 
-          -> Ports in blocking state
+Â  Â  Â  Â  Â  -> Ports in blocking state
 
- - There is not enough time to draw the entire topology
+Â - There is not enough time to draw the entire topology
 
- - Use Cisco360’s second method (not the colored pencil method)
+Â - Use Cisco360â€™s second method (not the colored pencil method)
 
-     -> Access ports
+Â  Â  Â -> Access ports
 
-          -> A + VLAN number
+Â  Â  Â  Â  Â  -> A + VLAN number
 
-          -> “A20"
+Â  Â  Â  Â  Â  -> â€œA20"
 
-     -> Trunk ports
+Â  Â  Â -> Trunk ports
 
-          -> “T"
+Â  Â  Â  Â  Â  -> â€œT"
 
-          -> Allowed VLANs, write next to the “T"
+Â  Â  Â  Â  Â  -> Allowed VLANs, write next to the â€œT"
 
-          -> "T 10, 20, 30"
+Â Â Â Â Â Â Â Â Â  -> "T 10, 20, 30"
 
-     -> Routed ports
+Â  Â  Â -> Routed ports
 
-          -> “R"
+Â  Â  Â  Â  Â  -> â€œR"
 
-     -> Port-channels
+Â  Â  Â -> Port-channels
 
-          -> Circle or oval over the links
+Â  Â  Â  Â  Â  -> Circle or oval over the links
 
-     -> SVI
+Â  Â  Â -> SVI
 
-          -> Write inside the box that represents the switch
+Â  Â  Â  Â  Â  -> Write inside the box that represents the switch
 
-     -> Disabled ports
+Â  Â  Â -> Disabled ports
 
-          -> “X"
+Â  Â  Â  Â  Â  -> â€œX"
 ![Screen_Shot_2015-08-30_at_1-17-38_PM.png](image/Screen_Shot_2015-08-30_at_1-17-38_PM.png)
 
 **Watch for land mind questions**
 
- - Easy 2 point questions that can break 20 points from somewhere else
+Â - Easy 2 point questionsÂ that can break 20 points from somewhere else
 
- - Don’t chase the rabbit down the rabbit hole
+Â - Donâ€™t chase the rabbit down the rabbit hole
 
 **Never touch layer 2 in the last 30 minutes of the lab**
 
- - Read the test and identify all layer 2 items
+Â - Read the test and identify all layer 2 items
 
-**It’s possible to pass all of the sections and still fail**
+**Itâ€™s possible to pass all of the sections and still fail**
 
- - Because you don’t make the cut score
+Â - Because you donâ€™t make the cut score
 
- - It is possible now to fail a section (just barely) and still pass (if you did awesome in another section).
+Â - It is possible now to fail a section (just barely)Â and still pass (if you did awesome in another section).
 
 - From Narbik:
 
-     -> You may pass each section individual.  Each section  may have cut off scores such as:
+Â Â Â Â  -> You may pass each section individual.Â  Each sectionÂ  may have cut off scores such as:
 
-          -> Troubleshooting:  70
+Â Â Â Â Â Â Â Â Â  -> Troubleshooting:Â  70
 
-          -> Diagnostics:  50
+Â Â Â Â Â Â Â Â Â  -> Diagnostics:Â  50
 
-          -> Configuration:  70
+Â Â Â Â Â Â Â Â Â  -> Configuration:Â  70
 
-     -> But if you don't meet or exceed the overall cutoff score, say 80, you'll fail the lab.
+Â Â Â Â  -> But if you don't meet or exceed the overall cutoff score, say 80, you'll fail the lab.
 
-     -> It’s unknown what the cutoff score is for each section, how the sections are weighted, or what the overall cutoff score is.
+Â Â Â Â  -> Itâ€™s unknown what the cutoff score is for each section, how the sections are weighted, or what the overall cutoff score is.
 
 ~~- From another source ( have heard from several sources this is not true ):~~
 
-~~     -> You will be graded against all of the other people taking the test that day~~
+~~Â  Â  Â -> You will be graded against all of the other people taking the test that day~~
 
-~~     -> 10 people may pass, but only 8 are allowed to pass for the day.~~
+~~Â  Â  Â -> 10 people may pass, but only 8 are allowed to pass for the day.~~
 
 **Save text files to the desktop.**
 
-**Cisco360’s Golden Moment:**
+**Cisco360â€™s Golden Moment:**
 
- - “All IPv4 and IPv6 addresses are reachable from all devices."
+Â - â€œAll IPv4 and IPv6 addresses are reachable from all devices."
 
- - Per link configuration
+Â - Per link configuration
 
- - Per IGP configuration
+Â - Per IGP configuration
 
- - Inter-IGP configuration (redistribution)
+Â - Inter-IGP configuration (redistribution)
 
- - BGP (sometimes)
+Â - BGP (sometimes)
 
- - It is recommend by Cisco360 to skip any filtering and summarization to reach the Golden Moment
+Â - It is recommend by Cisco360 to skip any filtering and summarization to reach the Golden Moment
 
-     -> Me: not sure I want to do this 
+Â  Â  Â -> Me: not sure I want to do thisÂ 
 
- - tclsh
+Â - tclsh
 
-     -> **WARNING!!**
+Â  Â  Â -> **WARNING!!**
 
-          -> The tcl script had a habit of locking up the switches during the Cisco360 assessment labs
+Â  Â  Â  Â  Â  -> The tcl script had a habit of locking up the switches during the Cisco360 assessment labs
 
-          -> Make sure to save the configuration of all devices before using the tcl script
+Â  Â  Â  Â  Â  -> Make sure to save the configuration of all devices before using the tcl script
 
-               -> If you haven’t been configuring with notepad….
+Â  Â  Â  Â  Â  Â  Â  Â -> If you havenâ€™t been configuring with notepadâ€¦.
 
-          -> If the device locks up, you can reload the device and not have to reconfigure the device from scratch.  Just paste the configuration back into the device.
+Â  Â  Â  Â  Â  -> If the device locks up, you can reload the device and not have to reconfigure the device from scratch. Â Just paste the configuration back into the device.
 
-          -> **Don’t use it.**
+Â  Â  Â  Â  Â  -> **Donâ€™t use it.**
 
 # tchsh
 
- foreach address {
+Â foreach address {
 
- 12.1.1.1
+Â 12.1.1.1
 
- 12.1.1.2
+Â 12.1.1.2
 
 } {ping $address}
 
-     -> Instead, list “ping <ip address>” separately on each line.
+Â  Â  Â -> Instead, list â€œping <ip address>â€ separately on each line.
 
 ping 12.1.1.1
 
 ping 12.1.1.2
 
- . . . .
+Â . . . .
 
-**Cisco360’s Configuration Order**
+**Cisco360â€™s Configuration Order**
 
- - Data Link Layer
+Â - Data Link Layer
 
- - IGPs
+Â - IGPs
 
- - Redistribution
+Â - Redistribution
 
- - BGP
+Â - BGP
 
-     -> Should reach Golden Moment
+Â  Â  Â -> Should reach Golden Moment
 
- - VPN Technologies
+Â - VPN Technologies
 
- - Multicast
+Â - Multicast
 
- - QoS
+Â - QoS
 
- - IP Services
+Â - IP Services
 
- - Cisco IOS Software features
+Â - Cisco IOS Software features
 
-     -> Exception, if there are VRFs, configure those first
+Â  Â  Â -> Exception, if there are VRFs, configure those first
 
-          -> Should be MPLS, VRF, MP-BGP
+Â  Â  Â  Â  Â  -> Should be MPLS, VRF, MP-BGP
 
-          -> L2 may need to be configured before VRF / MPLS / MP-BGP connectivity is possible.
+Â Â Â Â Â Â Â Â Â  -> L2 may need to be configured before VRF / MPLS / MP-BGP connectivity is possible.
 
-          -> The fact that you may be doing a CE-PE protocol configuration will probably not be pointed out by the tasks
+Â  Â  Â  Â  Â  -> The fact that you may be doing a CE-PE protocol configuration will probably not be pointed out by the tasks
 
-               -> "Configure IGP between routers….."
+Â  Â  Â  Â  Â  Â  Â  Â -> "Configure IGP between routersâ€¦.."
 
-               -> If you follow the lab tasks in order, you’ll end up having to reconfigure the PE routers for VRF later (waste time, potentially introduce configuration errors)
+Â  Â  Â  Â  Â  Â  Â  Â -> If you follow the lab tasks in order, youâ€™ll end up having to reconfigure the PE routers for VRF later (waste time, potentially introduce configuration errors)
 
-          -> “Configure the core first, whether it's MPLS or DMVPN.  Then attach each site to that core.” - Narbik
+Â  Â  Â  Â  Â  -> â€œConfigure the core first, whether it's MPLS or DMVPN.Â  Then attach each site to that core.â€ - Narbik
 
- - So, modified configuration order:
+Â - So, modified configuration order:
 
-     -> Layer 2
+Â  Â  Â -> Layer 2
 
-     -> DMVPN (core)
+Â  Â  Â -> DMVPN (core)
 
-     -> MPLS (core, especially if there are VRFs)
+Â  Â  Â -> MPLS (core, especially if there are VRFs)
 
-     -> IGPs
+Â  Â  Â -> IGPs
 
-     -> Redistribution
+Â  Â  Â -> Redistribution
 
-     -> BGP
+Â  Â  Â -> BGP
 
-     -> VPN Technologies ( whatever tasks are left for DMVPN and MPLS / L3VPN )
+Â  Â  Â -> VPN Technologies ( whatever tasks are left for DMVPN and MPLS / L3VPN )
 
-     -> QoS
+Â  Â  Â -> QoS
 
-     -> IP Services
+Â  Â  Â -> IP Services
 
-     -> Cisco IOS Software features
+Â  Â  Â -> Cisco IOS Software features
 
 **DOC-CD:**
 
- - “If you have to go to the DOC-CD more than once, you are going to run out of time.” - Narbik
+Â - â€œIf you have to go to the DOC-CD more than once, you are going to run out of time.â€ - Narbik
 
- - My mind map of lab exam topics to DOC-CD locations
+Â - My mind map of lab exam topics to DOC-CD locations
 
-     [http://feralpacket.org/?p=286](http://feralpacket.org/?p=286)
+Â  Â  Â [http://feralpacket.org/?p=286](http://feralpacket.org/?p=286)
 
 **Access-list, route-map, prefix-list naming convention:**
 
- - Use task numbers if possible
+Â - Use task numbers if possible
 
-     -> Helps avoid numbering conflicts
+Â  Â  Â -> Helps avoid numbering conflicts
 
-     -> Helps you remember or lookup why it was configured in the first place
+Â  Â  Â -> Helps you remember or lookup why it was configured in the first place
 
-     access-list 21 permit host 1.1.1.1
+Â  Â  Â access-list 21 permit host 1.1.1.1
 
- - Be careful when using punctuation in names
+Â - Be careful when using punctuation in names
 
-**     -> In fact, do not use any punctuation**
+**Â  Â  Â -> In fact, do not use any punctuation**
 
-**     ->** **This is a restriction that is listed in the lab ( mentioned by many people )**
+**Â  Â  Â ->** **This is a restriction that is listed in the lab ( mentioned by many people )**
 
-     route-map **TASK2.1** permit 10
+Â  Â  Â route-map **TASK2.1** permit 10
 
-          . . .
+Â  Â  Â  Â  Â  . . .
 
-     router bgp 100
+Â  Â  Â router bgp 100
 
-          nei 12.1.1.2 route-map **TASK2,1** in
+Â  Â  Â  Â  Â  nei 12.1.1.2 route-map **TASK2,1** in
 
-               -> You’d have to run debug to catch it if you cannot spot the typo (comma vs. period)
+Â  Â  Â  Â  Â  Â  Â  Â -> Youâ€™d have to run debug to catch it if you cannot spot the typo (comma vs. period)
 
- - Otherwise, use something meaningful
+Â - Otherwise, use something meaningful
 
-     -> List the protocol and the direction with redistribution
+Â  Â  Â -> List the protocol and the direction with redistribution
 
-          route-map OSPF->RIP deny 10
+Â Â Â Â Â Â  Â Â  route-map OSPF->RIP deny 10
 
-     -> Use NET plus the network portion of the IP address for prefix-lists
+Â  Â  Â -> Use NET plus the network portion of the IP address for prefix-lists
 
-          ip prefix-list NET3 permit 3.0.0.0/8
+Â Â Â Â Â Â  Â Â  ip prefix-list NET3 permit 3.0.0.0/8
 
 **Notepad:**
 
- - Very helpful with XR router configuration on the SP lab
+Â - Very helpful with XR router configuration on the SP lab
 
-     -> XR router configuration can be long, but is mostly repeatitive
+Â  Â  Â -> XR router configuration can be long, but is mostly repeatitive
 
- - Very helpful if you happen to lock up a device and it needs to be reset or reloaded
+Â - Very helpful if you happen to lock up a device and it needs to be reset or reloaded
 
- - Be aware of self-inflected configuration errors
+Â - Be aware of self-inflected configuration errors
 
-     -> Copy and paste errors
+Â  Â  Â -> Copy and paste errors
 
-          -> Pasting configuration into the wrong device
+Â  Â  Â  Â  Â  -> Pasting configuration into the wrong device
 
-          -> Not copying the entire configuration
+Â  Â  Â  Â  Â  -> Not copying the entire configuration
 
-     -> Not changing router-ids
+Â  Â  Â -> Not changing router-ids
 
-          -> Duplicate router-ids
+Â  Â  Â  Â  Â  -> Duplicate router-ids
 
-     -> Misconfigured network statements
+Â  Â  Â -> Misconfigured network statements
 
-     -> Misconfigured interfaces
+Â  Â  Â -> Misconfigured interfaces
 
-     -> Extra interfaces
+Â  Â  Â -> Extra interfaces
 
-          -> loopback101 is on both R1 and R2, but R2 should only have loopback102
+Â  Â  Â  Â  Â  -> loopback101 is on both R1 and R2, but R2 should only have loopback102
 
-     -> Configuration not completely copied to the devices
+Â  Â  Â -> Configuration not completely copied to the devices
 
-          -> Did you verify?
+Â  Â  Â  Â  Â  -> Did you verify?
 
-          -> Just because you didn’t see any errors when you pasted the configuration, doesn’t mean that the configuration is correct
+Â  Â  Â  Â  Â  -> Just because you didnâ€™t see any errors when you pasted the configuration, doesnâ€™t mean that the configuration is correct
 
-     -> Making configuration changes on the devices, but not updating the configuration in notepad
+Â  Â  Â -> Making configuration changes on the devices, but not updating the configuration in notepad
 
 **When you get stuck:**
 
- - Redistribution
+Â - Redistribution
 
-     -> Idea to get around redistribution if you are having problems, use a static route and loose points here, but maintain connectivity.  Count points later.  If you have enough, leave it.
+Â Â Â Â Â -> Idea to get around redistribution if you are having problems, use a static route and loose points here, but maintain connectivity. Â Count points later. Â If you have enough, leave it.
 
-     -> Don’t actually use a static route, you can redistribute an individual route to establish connectivity.
+Â Â Â Â Â -> Donâ€™t actually use a static route, you can redistribute an individual route to establish connectivity.
 
- - DMPVN
+Â - DMPVN
 
-     -> So many other protocols ride over DMVPN.  If you are not able to make it work as the task specified, use whatever ugly configuration you can to get reachability
+Â  Â  Â -> So many other protocols ride over DMVPN. Â If you are not able to make it work as the task specified, use whatever ugly configuration you can to get reachability
 
-     -> At least this way, you may be able to get points with the other protocols and tasks.
+Â  Â  Â -> At least this way, you may be able to get points with the other protocols and tasks.
 
 **Example config:**
 
-! R1
+!Â R1
 
-! Task 1
+!Â TaskÂ 1
 
-router ospf 1
+routerÂ ospfÂ 1
 
- router-id 0.0.0.1
+Â router-idÂ 0.0.0.1
 
-int s1/0
+intÂ s1/0
 
- ip ospf 1 area 0
+Â ipÂ ospfÂ 1Â areaÂ 0
 
-int lo0
+intÂ lo0
 
- ip ospf 1 area 0
+Â ipÂ ospfÂ 1Â areaÂ 0
 
-! Task 2
+!Â TaskÂ 2
 
-ip vrf TST
+ipÂ vrfÂ TST
 
- rd 1:10
+Â rdÂ 1:10
 
- route-target both 34:34
+Â route-targetÂ bothÂ 34:34
 
-int s1/1
+intÂ s1/1
 
- ip vrf forwarding TST
+Â ipÂ vrfÂ forwardingÂ TST
 
- ip add 13.1.1.1 255.255.255.0
+Â ipÂ addÂ 13.1.1.1Â 255.255.255.0
 
-router eigrp asdf
+routerÂ eigrpÂ asdf
 
- address-family ipv4 vrf TST auto 100
+Â address-familyÂ ipv4Â vrfÂ TSTÂ autoÂ 100
 
-  netw 13.1.1.1 0.0.0.0
+Â  netwÂ 13.1.1.1Â 0.0.0.0
 
-mpls ldp router-id lo0
+mplsÂ ldpÂ router-idÂ lo0
 
-mpls label protocol ldp
+mplsÂ labelÂ protocolÂ ldp
 
-int s1/0
+intÂ s1/0
 
-mpls ip
+mplsÂ ip
 
-router bgp 65001
+routerÂ bgpÂ 65001
 
- no bgp default ipv4-unicast
+Â noÂ bgpÂ defaultÂ ipv4-unicast
 
- nei 2.2.2.2 remote-as 65001
+Â neiÂ 2.2.2.2Â remote-asÂ 65001
 
- nei 2.2.2.2 up lo0
+Â neiÂ 2.2.2.2Â upÂ lo0
 
- address-family vpnv4 unicast
+Â address-familyÂ vpnv4Â unicast
 
-  nei 2.2.2.2 activate
+Â  neiÂ 2.2.2.2Â activate
 
-  nei 2.2.2.2 send-community extended
-
-!
-
-router eigrp asdf
-
- address-family ipv4 vrf TST auto 100
-
-  topology base
-
-   no redistribute bgp 65001 metric 1 1 1 1 1
-
-   redistribute bgp 65001 metric 1000000 1 255 1 1500
-
-router bgp 65001
-
- address-family ipv4 vrf TST
-
-  redistribute eigrp 100
-
-! Task 3
-
-route-map SOO permit 10
-
- set extcommunity soo 1:111
-
-int s1/1
-
- ip vrf sitemap SOO
+Â  neiÂ 2.2.2.2Â send-communityÂ extended
 
 !
 
-route-map SOO permit 10
+routerÂ eigrpÂ asdf
 
- no set extcommunity soo 1:111
+Â address-familyÂ ipv4Â vrfÂ TSTÂ autoÂ 100
 
- set extcommunity soo 1:121
+Â  topologyÂ base
 
-! R2
+Â  Â noÂ redistributeÂ bgpÂ 65001Â metricÂ 1Â 1Â 1Â 1Â 1
 
-! Task 1
+Â  Â redistributeÂ bgpÂ 65001Â metricÂ 1000000Â 1Â 255Â 1Â 1500
 
-router ospf 1
+routerÂ bgpÂ 65001
 
- router-id 0.0.0.2
+Â address-familyÂ ipv4Â vrfÂ TST
 
-int s1/0
+Â  redistributeÂ eigrpÂ 100
 
- ip ospf 1 area 0
+!Â TaskÂ 3
 
-int lo0
+route-mapÂ SOOÂ permitÂ 10
 
- ip ospf 1 area 0
+Â setÂ extcommunityÂ sooÂ 1:111
 
-! Task 2
+intÂ s1/1
 
-ip vrf TST
-
- rd 1:20
-
- route-target both 34:34
-
-int s1/2
-
- ip vrf forwarding TST
-
- ip add 24.1.1.2 255.255.255.0
-
-router eigrp asdf
-
- address-family ipv4 vrf TST auto 100
-
-  netw 24.1.1.2 0.0.0.0
+Â ipÂ vrfÂ sitemapÂ SOO
 
 !
 
-mpls ldp router-id lo0
+route-mapÂ SOOÂ permitÂ 10
 
-mpls label protocol ldp
+Â noÂ setÂ extcommunityÂ sooÂ 1:111
 
-int s1/0
+Â setÂ extcommunityÂ sooÂ 1:121
 
-mpls ip
+!Â R2
 
-!
+!Â TaskÂ 1
 
-router bgp 65001
+routerÂ ospfÂ 1
 
- no bgp default ipv4-unicast
+Â router-idÂ 0.0.0.2
 
- nei 1.1.1.1 remote-as 65001
+intÂ s1/0
 
- nei 1.1.1.1 up lo0
+Â ipÂ ospfÂ 1Â areaÂ 0
 
- address-family vpnv4 unicast
+intÂ lo0
 
-  nei 1.1.1.1 activate
+Â ipÂ ospfÂ 1Â areaÂ 0
 
-  nei 1.1.1.1 send-community extended
+!Â TaskÂ 2
 
-!
+ipÂ vrfÂ TST
 
-router eigrp asdf
+Â rdÂ 1:20
 
- address-family ipv4 vrf TST auto 100
+Â route-targetÂ bothÂ 34:34
 
-  topology base
+intÂ s1/2
 
-   no redistribute bgp 65001 metric 1 1 1 1 1
+Â ipÂ vrfÂ forwardingÂ TST
 
-   redistribute bgp 65001 metric 1000000 1 255 1 1500
+Â ipÂ addÂ 24.1.1.2Â 255.255.255.0
 
-router bgp 65001
+routerÂ eigrpÂ asdf
 
- address-family ipv4 vrf TST
+Â address-familyÂ ipv4Â vrfÂ TSTÂ autoÂ 100
 
-  redistribute eigrp 100
-
-! Task 3
-
-route-map SOO permit 10
-
- set extcommunity soo 2:222
-
-int s1/2
-
- ip vrf sitemap SOO
+Â  netwÂ 24.1.1.2Â 0.0.0.0
 
 !
 
-route-map SOO permit 10
+mplsÂ ldpÂ router-idÂ lo0
 
- no set extcommunity soo 2:222
+mplsÂ labelÂ protocolÂ ldp
 
- set extcommunity soo 1:121
+intÂ s1/0
 
-! Task 4
-
-route-map SOO permit 10
-
- no set extcommunity soo 1:121
-
- set extcommunity soo 2:222
+mplsÂ ip
 
 !
 
-route-map SOO permit 10
+routerÂ bgpÂ 65001
 
- no set extcommunity soo 2:222
+Â noÂ bgpÂ defaultÂ ipv4-unicast
 
- set extcommunity soo 1:121
+Â neiÂ 1.1.1.1Â remote-asÂ 65001
 
-ip sla 1
+Â neiÂ 1.1.1.1Â upÂ lo0
 
- icmp-echo 34.1.1.4 source-interface s1/2
+Â address-familyÂ vpnv4Â unicast
 
- threshold 500
+Â  neiÂ 1.1.1.1Â activate
 
- timeout 500
+Â  neiÂ 1.1.1.1Â send-communityÂ extended
 
- freq 5
+!
 
- vrf TST
+routerÂ eigrpÂ asdf
 
-ip sla schedule 1 life forever start-time now
+Â address-familyÂ ipv4Â vrfÂ TSTÂ autoÂ 100
 
-track 2 ip sla 1 reachability
+Â  topologyÂ base
 
-event manager applet DOWN
+Â  Â noÂ redistributeÂ bgpÂ 65001Â metricÂ 1Â 1Â 1Â 1Â 1
 
- event track 2 state down
+Â  Â redistributeÂ bgpÂ 65001Â metricÂ 1000000Â 1Â 255Â 1Â 1500
 
- action 1.1 cli command “enable”
+routerÂ bgpÂ 65001
 
- action 1.2 cli command “config 1”
+Â address-familyÂ ipv4Â vrfÂ TST
 
- action 1.3 cli command “route-map SOO permit 10”
+Â  redistributeÂ eigrpÂ 100
 
- action 1.4 cli command “no set extcommunity soo 1:121”
+!Â TaskÂ 3
 
- action 1.5 cli command “set extcommunity soo 2:222”
+route-mapÂ SOOÂ permitÂ 10
 
-event manager applet UP
+Â setÂ extcommunityÂ sooÂ 2:222
 
- event trace 2 state up
+intÂ s1/2
 
- action 1.1 cli command “enable”
+Â ipÂ vrfÂ sitemapÂ SOO
 
- action 1.2 cli command “config t”
+!
 
- action 1.3 cli command “route-map SOO permit 10”
+route-mapÂ SOOÂ permitÂ 10
 
- action 1.4 cli command “no set extcommunity soo 2:222”
+Â noÂ setÂ extcommunityÂ sooÂ 2:222
 
- action 1.5 cli command “set extcommunity soo 1:121” possible now to fail a section (just barely) and still pass (if you did awesome in another section).
+Â setÂ extcommunityÂ sooÂ 1:121
+
+!Â TaskÂ 4
+
+route-mapÂ SOOÂ permitÂ 10
+
+Â noÂ setÂ extcommunityÂ sooÂ 1:121
+
+Â setÂ extcommunityÂ sooÂ 2:222
+
+!
+
+route-mapÂ SOOÂ permitÂ 10
+
+Â noÂ setÂ extcommunityÂ sooÂ 2:222
+
+Â setÂ extcommunityÂ sooÂ 1:121
+
+ipÂ slaÂ 1
+
+Â icmp-echoÂ 34.1.1.4Â source-interfaceÂ s1/2
+
+Â thresholdÂ 500
+
+Â timeoutÂ 500
+
+Â freqÂ 5
+
+Â vrfÂ TST
+
+ipÂ slaÂ scheduleÂ 1Â lifeÂ foreverÂ start-timeÂ now
+
+trackÂ 2Â ipÂ slaÂ 1Â reachability
+
+eventÂ managerÂ appletÂ DOWN
+
+Â eventÂ trackÂ 2Â stateÂ down
+
+Â actionÂ 1.1Â cliÂ commandÂ â€œenableâ€
+
+Â actionÂ 1.2Â cliÂ commandÂ â€œconfigÂ 1â€
+
+Â actionÂ 1.3Â cliÂ commandÂ â€œroute-mapÂ SOOÂ permitÂ 10â€
+
+Â actionÂ 1.4Â cliÂ commandÂ â€œnoÂ setÂ extcommunityÂ sooÂ 1:121â€
+
+Â actionÂ 1.5Â cliÂ commandÂ â€œsetÂ extcommunityÂ sooÂ 2:222â€
+
+eventÂ managerÂ appletÂ UP
+
+Â eventÂ traceÂ 2Â stateÂ up
+
+Â actionÂ 1.1Â cliÂ commandÂ â€œenableâ€
+
+Â actionÂ 1.2Â cliÂ commandÂ â€œconfigÂ tâ€
+
+Â actionÂ 1.3Â cliÂ commandÂ â€œroute-mapÂ SOOÂ permitÂ 10â€
+
+Â actionÂ 1.4Â cliÂ commandÂ â€œnoÂ setÂ extcommunityÂ sooÂ 2:222â€
+
+Â actionÂ 1.5Â cliÂ commandÂ â€œsetÂ extcommunityÂ sooÂ 1:121â€Â possible now to fail a section (just barely)Â and still pass (if you did awesome in another section).
 
 **Recommendations that only work with a printed copy of the network diagram:**
 
 **Things to look for in the lab diagram:**
 
- - Loops
+Â - Loops
 
-     -> Circle them
+Â  Â  Â -> Circle them
 
- - Stubs
+Â - Stubs
 
-     -> Bracket them
+Â  Â  Â -> Bracket them
 
- - Count the VLANs
+Â - Count the VLANs
 
-     -> Slash through them
+Â  Â  Â -> Slash through them
 
-**Draw a big red “X” on interfaces that have the following applied:**
+**Draw a big red â€œXâ€ on interfaces that have the following applied:**
 
- - ACL
+Â - ACL
 
- - Port-security
+Â - Port-security
