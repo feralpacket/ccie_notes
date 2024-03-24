@@ -143,6 +143,8 @@ you can save that notepad file on the desktop during the exam
           -> Write inside the box that represents the switch
      -> Disabled ports
           -> “X"
+
+
 ![[./_resources/CCIE_Lab_Recommendations.resources/Screen Shot 2015-08-30 at 1.17.38 PM.png]]
 ![20141001_163415-1.jpeg](image/20141001_163415-1.jpeg)
 ![Screen_Shot_2015-08-30_at_1-17-38_PM.png](image/Screen_Shot_2015-08-30_at_1-17-38_PM.png)
@@ -152,7 +154,7 @@ you can save that notepad file on the desktop during the exam
 ![Screen Shot 2015-08-30 at 1.17.38 PM.png](_resources/CCIE_Lab_Recommendations.resources/Screen Shot 2015-08-30 at 1.17.38 PM.png)
 ![Screen_Shot_2015-08-30_at_1-17-38_PM.png](image/Screen_Shot_2015-08-30_at_1-17-38_PM.png)
 
-```
+```python
 **Watch for land mind questions**
  - Easy 2 point questions that can break 20 points from somewhere else
  - Don’t chase the rabbit down the rabbit hole
