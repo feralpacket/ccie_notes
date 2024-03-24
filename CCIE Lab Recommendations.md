@@ -147,7 +147,7 @@ you can save that notepad file on the desktop during the exam
 ![20141001_163415-1.jpeg](image/20141001_163415-1.jpeg)
 ```
 
-![Screen Shot 2015-08-30 at 1.17.38 PM.png](./_resources/CCIE_Lab_Recommendations.resources/Screen Shot 2015-08-30 at 1.17.38 PM.png)
+![Screen Shot 2015-08-30 at 1.17.38 PM.png](_resources/CCIE_Lab_Recommendations.resources/Screen Shot 2015-08-30 at 1.17.38 PM.png)
 
 ```
 **Watch for land mind questions**
